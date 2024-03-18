@@ -1,9 +1,10 @@
 import { createBoard } from '@wixc3/react-board';
-import { PagewithNavigation } from '../../board-wrappers/page-with-navigation';
+import App from '../../../App';
 
 export default createBoard({
-    name: 'App',
-    Board: () => <PagewithNavigation />,
+    name: 'service-categories',
+    Board: () => <App />,
+    isSnippet: true,
     environmentProps: {
         windowWidth: 1280,
         windowHeight: 1024,
